@@ -297,8 +297,8 @@ export default {
 }
 
 .radio-logo {
-    width: 50px;
-    height: 50px;
+    width: 150px;
+    height: 150px;
     border-radius: 25px;
 }
 
@@ -312,9 +312,9 @@ export default {
 
 .bar {
     width: 4px;
-    height: 100%;
+    height: 80px;
     margin: 0 2px;
-    background-color: #333;
+    background-color: #white;
     animation: pulse 0.8s infinite ease-in-out alternate;
 }
 

@@ -17,13 +17,9 @@ function processPause(progress) {
       
       <v-row>
         <!-- Campo di ricerca -->
-        <v-col cols="6">
+        <v-col cols="12">
           <v-text-field v-model="search" label="Cerca" prepend-inner-icon="mdi-magnify" variant="outlined" hide-details
             single-line dense @input="filterRadios"></v-text-field>
-        </v-col>
-        <!-- Combobox per i paesi -->
-        <v-col cols="6">
-          <v-combobox v-model="selectedCountry" :items="countries" label="Paese" dense outlined hide-details></v-combobox>
         </v-col>
       </v-row>
       <v-row>

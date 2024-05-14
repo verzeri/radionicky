@@ -1,13 +1,15 @@
 <template>
   <div class="radio-wrapper">
     <v-container>
-      <br>
+     <v-row>
+        <v-col cols="12">
+          <h2 class="titleR">✮Preferiti✮</h2>
+        </v-col>
+      </v-row>
       <!-- Search bar -->
       <v-text-field v-model="search" label="Cerca" prepend-inner-icon="mdi-magnify" variant="outlined" hide-details
         single-line @input="filterFavorites"></v-text-field>
-        <br><br>
       <v-row>
-        <br><br>
         <v-col v-for="(favorite, index) in filteredFavorites" :key="index" cols="12" sm="6" md="4">
           <v-card class="radio-card" :class="{ 'active-radio': index === activeRadioIndex }">
             <v-row no-gutters>
@@ -169,7 +171,7 @@ export default {
       text-align: center;
       justify-content: center;
       border-radius: 10px;
-      background-color: rgba(255, 255, 255, 0.1);
+      background-color: white;
       cursor: pointer;
       padding: 20px;
     }
